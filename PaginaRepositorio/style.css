@@ -1,0 +1,76 @@
+body{
+    scroll-behavior: smooth;
+    /*background-image: url("images2.jpeg");*/
+    margin: 0%;
+    padding: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    }
+    .principio{
+    width: 100%;
+    height: 120px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    }
+    /*.repositorios{
+    margin-top: 60px;
+    height: 100px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left: 5%;
+    padding-left: 8px;
+    padding-top: 1px;
+    /*background-image: url("images3.jpeg");*/
+    /*padding: 0%;
+    }
+    .repositorios a{
+    text-decoration: none;
+    }
+    .repositorios img{
+    margin-right: 0;
+    height: 100px;
+    width: 200px;
+    margin-left: 50%;
+    padding: 0;
+    }*/
+    .materias{
+    margin-left: 3%;
+    /*height: 200px;
+    width: 300px;*/
+    /*box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}*/
+    }
+    .materias .nombre-materia{
+    margin-top: 100px;
+    margin-left: 5%;
+    font-size: 22px;
+    line-height: 24px;
+    color: #626366;
+    margin-bottom: 15px;
+    font-size: larger;
+    }
+    .materias .link-materia{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    font-size: 16px;
+    line-height: 24px;
+    color: gray;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    border-color: #003220;
+    color: #003220;
+    }
+    .materias .trabajos-materia{
+    margin-left: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    border-color: #003220;
+    color: #003220;
+    }
+    .Linea-materias{
+    height: 1px;
+    width: 20px;
+    background-color: black;
+    }
