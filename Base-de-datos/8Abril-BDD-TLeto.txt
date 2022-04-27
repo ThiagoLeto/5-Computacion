@@ -1,0 +1,35 @@
+
+/*1*/   delimiter //
+	create procedure area-rectangulo(in base int, in altura int)
+	begin 
+	declare area int default 0;
+	set area = base * altura;
+	select area;
+	end //
+	delimiter ;
+
+
+/*2*/	create procedure positivo-y-mayor-a-100(in numeroingresado int)
+	begin 
+	declare respuesta varchar(50);
+	if(numeroingresado > 100) 
+	then
+	set respuesta = "El numero ingresado es positivo y mayor a 100";  
+	else if (numeroingresado > 0 && numeroingresado<100)
+	then
+	set respuesta = "El numero ingresado es positivo pero no mayor a 100";
+	else
+	set respuesta = "El numero ingresado es negativo";
+	end if
+	end //
+	delimiter ;
+
+
+/*3*/   create procedure area-triangulo(in numero1 int, in numero2 int, in numero3 int)
+	begin 
+	declare promedio float default 0;
+	set promedio = numero1 + numero2 + numero3;
+	set promedio = promedio/3;
+	select promedio;
+	end //
+	delimiter ;
