@@ -1,0 +1,71 @@
+/*1*/ select * from mascotas group by edad; 
+
+/*2*/ select * from mascotas group by peso; 
+
+/*3*/ select count(edad), edad from mascotas group by edad; 
+
+/*4*/ select count(pesos), pesos from mascotas group by pesos; 
+
+/*5*/ select sum(pesos) from mascotas where edad beetwen 5 and 10; 
+
+/*6*/ select avg(pesos) from mascotas; 
+
+  
+/*7*/ 
+
+delimiter // 
+
+create procedure cant-mascotas(in id_dueño2 int) 
+
+begin 
+
+select count(mascotas) from mascotas where id_mascota in (select id_mascota where id_dueño2 = id_dueño); 
+
+end //
+
+delimiter ;
+
+
+/*8*/ 
+
+delimiter // 
+
+create procedure peso15kg (in id_mascota2 int) 
+
+begin 
+
+declare respuesta varchar(50); 
+
+if (select peso from mascotas where id_mascota = id_mascota2 > 15) 
+
+then 
+
+set respuesta = "El peso es mayor a 15kg"; 
+
+else 
+
+set respuesta = "El peso es menor a 15kg"; 
+
+end if; 
+
+select respuesta; 
+
+end //
+
+delimiter ;
+
+
+/*9*/ 
+
+delimiter // 
+
+create procedure datos-veterinario(in id_veterinario2 int) 
+
+begin 
+
+select * from veterinarios where id_veterinario = id_veterinario2; 
+
+end //
+
+delimiter ;
+  
