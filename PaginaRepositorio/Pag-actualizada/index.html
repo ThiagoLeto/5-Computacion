@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>RepositoriosTLeto</title>
+        <link rel="icon" href="upa.gif" type="image/gif" sizes="32x32">
+    </head>
+    
+    <body>
+        <div class="materias-principio">
+            <div class="principio">
+                <p style="font-size: larger; padding-left: 5.2%; padding-top: 0.8%; margin-bottom: 0; opacity: 0.7;">Repositorios Thiago Leto</p>
+                <h1 style="margin-left: 5%; padding: 0; margin-bottom: 0; margin-top: 0;">ThiagoLeto.github.io-5Computacion</h1>
+                <a style="margin-left: 5.35%; text-decoration: none; opacity: 0.6;" href="https://github.com/ThiagoLeto">Ir</a>
+            </div>
+
+            <h1 style="margin-left: 15%; margin-top: 4.7%; color: #444343; font-size: 60;">Materias</h1>
+
+            <div class="todasmaterias">
+                <div class="materia">
+                    <div class="linea-materias"></div>
+                </div>
+                <div class="materia">
+                    <p class="nombre-materia">BASE DE DATOS</p>
+                    <a class="link-materia" href="https://github.com/ThiagoLeto/5-Computacion/tree/main/Base-de-datos">Link-Github-Base de datos</a>
+                    <br>
+                    <a class="trabajos-materia" href="#trabajos-bdd">Trabajos-BDD</a>  
+                    <p class="nose">Epicardo</p>
+                    <div class="linea-materias"></div>
+                </div>   
+
+                <div class="materia">
+                    <p class="nombre-materia">JAVA</p>
+                    <a class="link-materia" href="https://github.com/ThiagoLeto/5-Computacion/tree/main/Base-de-datos">Link-Github-Java</a>
+                    <br>
+                    <a class="trabajos-materia" href="#trabajos-java">Trabajos-Java</a>   
+                    <p class="nose">Epicardo</p> 
+                    <div class="linea-materias"></div>
+                </div>
+
+                <div class="materia">
+                    <p class="nombre-materia">TALLER(HTML-CSS-JS)</p>
+                    <a class="link-materia" href="https://github.com/ThiagoLeto/5-Computacion/tree/main/Base-de-datos">Link-Github-Webs</a>
+                    <br>
+                    <a class="trabajos-materia" href="#trabajos-taller">Trabajos-Webs-html-css-js</a>
+                    <p class="nose">Epicardo</p>
+                    <div class="linea-materias"></div>
+                </div>    
+                <div class="materia">
+                    <p class="nombre-materia">NO SE WWWWW</p>
+                    <a class="link-materia" href="https://github.com/ThiagoLeto/5-Computacion/tree/main/Base-de-datos">Link</a>
+                    <br>
+                    <a class="trabajos-materia" href="">Trabajos</a>
+                    <p class="nose">Epicardo</p>
+                    <div class="linea-materias"></div>
+                </div>   
+                
+            </div>
+        </div>
+
+        <div class="trabajos">
+
+            <div class="trabajos-materia">
+                <br>
+                <a class="titulo-materia" id="trabajos-bdd">Base de datos</a>
+                <div class="ejercicio-materia">
+                    
+                    <div class="ejercicio">
+                        <hr class="linea-trabajos">
+                        <details class="ejercicio-datos">
+                            <summary>11Marzo-BDD-Ej1-TLeto</summary>
+                            <p> ESTE ES UN EJEMPLO
+                                <br><br>
+                                
+                                <br>/* 1  */ DELETE FROM alumno WHERE dni=42845014;
+                                <br>/* 2  */ UPDATE notas SET trim1=10 WHERE id_alumno=25 AND id_materia=8;
+                                <br>/* 3  */ SELECT nombre,cant_horas,aula FROM materias WHERE curso="3C" ORDER BY nombre;
+                                <br>/* 4  */ DELETE FROM alumnos WHERE curso="6C";
+                                <br>/* 5  */ UPDATE alumnos SET curso="5C" WHERE curso="4C";
+                                <br>/* 6  */ SELECT dni,nombre,fecha_nacimiento FROM alumnos WHERE curso="4C"ORDER BY fecha_nacimiento DESC;
+                                <br>/* 7  */ DROP TABLE notas;
+                                <br>/* 8  */ SELECT MAX(trim1) FROM notas WHERE id_materia=2;
+                                <br>/* 9  */ SELECT AVG(diciembre) FROM notas WHERE id_materia=3; 
+                                <br>/* 10 */ INSERT INTO alumnos(id_alumno,dni,nombre,direccion,telefono,curso,fecha_nacimiento)VALUES 
+                                        <br>    (12345678,"Martin Leto","Lanus",1500000000,"5C","2022-3-11");</p>
+                        </details>
+                    </div>
+
+                    <div class="ejercicio">
+                        
+                        <hr class="linea-trabajos">
+                        <details class="ejercicio-datos">
+                            <summary>11Marzo-BDD-Ej2-TLeto</summary>
+                                <p> ESTE ES UN EJEMPLO
+                                    <br><br>
+                                    
+                                <br>/* 1  */ SELECT id_pedido,id_cliente,fecha_compra,descuento FROM pedidos WHERE fecha_compra BETWEEN "2017-7-1" AND "2017-7-31" ORDER BY id_cliente AND fecha_compra;
+                                <br>/* 2  */ SELECT COUNT(productos) FROM productos;
+                                <br>/* 3  */ SELECT COUNT(descuentos) FROM pedidos WHERE descuento>10;
+                                <br>/* 4  */ SELECT COUNT(cantidad),cantidad,id_producto FROM pedidos;
+                                <br>/* 5  */ UPDATE clientes SET email="juan@gmail.com" AND telefono=45224556 WHERE id_cliente=1;
+                                <br>/* 6  */ SELECT*FROM detallepedido WHERE cantidad>3;
+                                <br>/* 7  SELECT id_pedido,descripcion,id_cliente FROM pedidos WHERE descuento IN (5,10,15);	*/
+                                <br>/* 8  */ DELETE FROM clientes WHERE fecha_alta  = "1999-23-01";
+                                <br>/* 9  */ INSERT INTO clientes (id_cliente,nombre,direccion,telefono,email,fecha_alta)VALUES
+                                   <br>     ("Pablo Califano","Gerli",1500001111,"nemen@gmail.com","2022-3-11");
+                                <br>/* 10 */ SELECT SUM(precio_compra) FROM detallepedido WHERE id_pedido=1;
+                        </details>
+                    </div>
+                
+            </div>
+        
+        </div>
+        <br>
+        
+
+            <div class="trabajos-materia">
+                <br>
+                <a class="titulo-materia" id="trabajos-java">Java</a>
+                <div class="ejercicio-materia">
+                    
+                    <div class="ejercicio">
+                        
+                        <hr class="linea-trabajos">
+                        <details class="ejercicio-datos">
+                            <summary>9-Marzo-Ej1-TLeto</summary>
+                            <details style="margin-left:20px;">
+                                <summary>Main.java</summary>
+                                <p>
+                                   <br> public class main {
+                                       <br> public static void menu(ArrayList<Producto> Array_productos){
+                                    
+                                    <br>
+                                        <br>    System.out.println("Opciones");
+                                            
+                                    </p>
+                            </details>
+                            <details style="margin-left:20px;" >
+                                <summary>Persona.java</summary>
+                                <p><br> public class Producto {
+                                    
+                                 <br>   private String nombre;
+                                  <br>  private float precio;
+                                
+                              <br>
+                              <br>      public void Registro (String nombre, float precio) {
+                                
+                                       <br> this.nombre = nombre;
+                                   <br>     this.precio = precio;
+                               <br>     }
+                                
+                                <br>
+                                   <br> public float Importe_pagar () {
+                                     <br>   return this.precio;
+                                 <br>   }
+                                }</p>
+                            </details>
+                            
+                        </details>
+                    </div>
+
+                    <div class="ejercicio">
+                        <hr class="linea-trabajos">
+                        <details class="ejercicio-datos">
+                            <summary>9-Marzo-Ej2-TLeto</summary>
+                                <p> ESTE ES UN EJEMPLO
+                                    <br><br>
+                                    
+                                <br>/* 1  */ SELE7-1" A1" Ocliente AND fecha_compra;
+                                <br>/* 2  */ SELECT COUNT(ROM productos;
+                                <br>/* 3  */ SELECT COUNT(didos WHERE descuento>10;
+                                <br>/* 4  */ SELECT COUidad,id_producto FROM pedidos;
+                                <br>/* 5  */ UPDATE clientes SE24556 WHERE id_cliente=1;
+                                   <br>     ("Pablo2022-3-11");
+                                <br>/* 10 */ SELECTHERE id_pedido=1;
+                        </details>
+                    </div>
+                
+            </div>
+        
+        </div>
+
+        
+
+            <div class="trabajos-materia">
+                <br><br>
+                <a class="titulo-materia" id="trabajos-taller">Taller</a>
+                <div class="ejercicio-materia">
+                    
+                    <div class="ejercicio">
+                        <hr class="linea-trabajos">
+                        <details class="ejercicio-datos">
+                            <summary>xd?</summary>
+                            <p> ESTE ES UN EJEMPLO
+                                <br><br>
+                                
+                                <br>/* 2  */ UPDATE notas SET trim1=10 WHERE id_alumno=25 AND id_materia=8;
+                                <br>/* 3  */ SELECT nombaterias WHERE curso="3C" ORDER BY nombre;
+                                <br>/* 4  */ DELETE 6C";
+                                <br>/* 5  */ UPDATE al="4C";
+                                <br>/* 6  */ Sos WHERE curso="4C"ORDER BY fecha_nacimiento DESC;
+                                        <br>    (12345678,"M"2022-3-11");</p>
+                                        trim1=10 WHERE id_alumno=25 AND id_materia=8;
+                                        <br>/* 3  */ SELECT nombaterias WHERE curso="3C" ORDER BY nombre;
+                                        <br>/* 4  */ DELETE 6C";
+                        </details>
+                    </div>
+
+                    <div class="ejercicio">
+                        <hr class="linea-trabajos">
+                        <details class="ejercicio-datos">
+                            <summary>dx?</summary>
+                                <p> ESTE ES UN EJEMPLO
+                                    <br><br>
+                                    
+                                <br>/* 1  */ SELE7-1" A1" Ocliente AND fecha_compra;
+                                <br>/* 2  */ SELECT COUNT(ROM productos;
+                                <br>/* 3  */ SELECT COUNT(didos WHERE descuentedidos;
+                                <br>/* 5  */ UPDATE clientes SE24556 WHERE id_cliente=1;
+                                   <br>     ("Pablo2022-3-11");
+                                <br>/* 10 */ SELECTHERE id_pedido=1;
+                        </details>
+                        <br>
+                    </div>
+            </div>
+
+        </div>
+        <!--<iframe src="Hijo.java" height="200" width="700" title="Iframe Example"></iframe>-->
+            
+    </body>
+</html>
