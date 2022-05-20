@@ -1,0 +1,108 @@
+html, body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.pantalla{ 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffe7a4, #ffa734);
+    position: absolute; 
+    
+}
+
+.cuadro-jugador{
+    height: 8.5%;
+    width: 6%;
+    background-color: #fff;
+    top: 8%;
+    position: absolute;
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+}
+#cuadro-jugador1{ 
+    margin-left: 35%;  
+    /*box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;*/
+}
+#cuadro-jugador2{
+    margin-left: 58%;
+    /*box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;*/
+}
+.circulo {
+    width: 4.5%;
+    height: 4.5%;
+    border-radius: 50%;
+    background-color: #1f791f;
+}
+
+.juego{
+    width: 30%;
+    height: 55%;
+    width: 560px;
+    height: 550px;
+    background-color: rgb(227, 231, 235);
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    margin-left: -100px;
+    margin-top: -300px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    /*box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;*/
+    display:flex;
+}
+.juego .cuadrados-fila1{
+    position: absolute;
+    display: flex;
+}
+.cuadrado-fila1{
+    height: 183px;
+    width: 186px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.cuadrados-fila2{
+    position: absolute;
+    display: flex;
+}
+
+.cuadrado-fila2{
+    height: 183px;
+    width: 186px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    margin-top: 184px;
+}
+.cuadrados-fila3{
+    position: absolute;
+    display: flex;
+}
+.cuadrado-fila3{
+    margin-top: 368px;
+    height: 183px;
+    width: 186px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.botones{
+    position: absolute;
+    left: 36%;
+    top: 80%;
+
+}
+.botones button{
+    margin: 50px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border:1px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #31363a;
+    color: #fff;
+    cursor: pointer;
+}
