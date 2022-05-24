@@ -17,7 +17,20 @@ body{
     
 }
 
-.cuadro-jugador{
+
+#cuadro-jugador1{ 
+    margin-left: 35%;  
+    height: 8.5%;
+    width: 6%;
+    background-color: #fff;
+    top: 8%;
+    position: absolute;
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  
+}
+#cuadro-jugador2{
+    margin-left: 58%;
     height: 8.5%;
     width: 6%;
     background-color: #fff;
@@ -27,27 +40,35 @@ body{
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 
 }
-#cuadro-jugador1{ 
-    margin-left: 35%;  
-    /*box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;*/
+
+.circulo-jugador {
+    margin-top: 10%;
+    width:60%;
+    height:80%;
+    border-radius:50%;
+    border: solid 5px #31363a;
+    overflow:hidden;
+    margin: auto;
 }
-#cuadro-jugador2{
-    margin-left: 58%;
-    /*box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;*/
+.cruz-jugador{
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    background:
+    linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#000000 45%,#000000 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, #ffffff 0%,#ffffff 43%,#000000 45%,#000000 55%,#ffffff 57%,#ffffff 100%);
+    margin-left: 12%;
+    margin-top: 5%;
 }
-.circulo {
-    width: 4.5%;
-    height: 4.5%;
-    border-radius: 50%;
-    background-color: #1f791f;
-}
+
+
 
 .juego{
     width: 30%;
     height: 55%;
     width: 560px;
     height: 550px;
-    background-color: rgb(227, 231, 235);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 52%;
     left: 40%;
@@ -55,11 +76,11 @@ body{
     margin-top: -300px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     /*box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;*/
-    display:flex;
 }
-.juego .cuadrados-fila1{
+.cuadrados-fila1{
     position: absolute;
     display: flex;
+    z-index: 3;
 }
 .cuadrado-fila1{
     height: 183px;
@@ -67,6 +88,7 @@ body{
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 .cuadrados-fila2{
+    z-index: 2;
     position: absolute;
     display: flex;
 }
@@ -78,6 +100,7 @@ body{
     margin-top: 184px;
 }
 .cuadrados-fila3{
+    z-index: 1;
     position: absolute;
     display: flex;
 }
@@ -87,6 +110,17 @@ body{
     width: 186px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
+.circulo-juego{
+    width:40%;
+    height:60%;
+    border-radius:50%;
+    border: solid 5px #31363a;
+    overflow:hidden;
+    margin: auto;
+    position: absolute;
+}
+
+
 
 .botones{
     position: absolute;
@@ -106,3 +140,4 @@ body{
     color: #fff;
     cursor: pointer;
 }
+
