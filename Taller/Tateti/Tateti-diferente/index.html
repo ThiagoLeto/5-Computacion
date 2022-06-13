@@ -12,17 +12,18 @@
 
 <body>
     <div class="pantalla">
-
-        <div class="jugador">
-            <h1 style="color: #fff; margin-left: 35%; top: 0.7%;position: absolute;">Jugador 1</h1>
-            <div id="cuadro-jugador1">
-                <div class="circulo-jugador"></div>
+        <div class="jugadores">
+            <div class="jugador">
+                <h1 style="color: #fff; margin-left: 35%; top: 0.7%;position: absolute;">Jugador 1</h1>
+                <div id="cuadro-jugador1">
+                    <div class="circulo-jugador"></div>
+                </div>
             </div>
-        </div>
-        <div class="jugador">
-            <h1 style="color: #fff; margin-left: 58%; top: 0.7%;position: absolute;">Jugador 2</h1>
-            <div id="cuadro-jugador2">
-                <div class="cruz-jugador"></div>
+            <div class="jugador">
+                <h1 style="color: #fff; margin-left: 58%; top: 0.7%;position: absolute;">Jugador 2</h1>
+                <div id="cuadro-jugador2">
+                    <div class="cruz-jugador"></div>
+                </div>
             </div>
         </div>
 
@@ -47,8 +48,8 @@
         </div>
 
         <div class="botones">
-            <button id="botonardo">Jugar de nuevo</button>
-            <button>Reiniciar</button>
+            <button id="jugar-de-nuevo" onclick="jugar_de_nuevo">Jugar de nuevo</button>
+            <button id="reiniciar" onclick="reiniciar(reiniciar)">Reiniciar</button>
         </div>
     </div>
 
