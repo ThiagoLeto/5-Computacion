@@ -21,13 +21,6 @@ let victorias2 = 0;
 document.getElementById('victorias1').innerHTML = victorias1;
 document.getElementById('victorias2').innerHTML = victorias2;
 
-
-/*let id_victorias1 = document.getElementById('victorias1');
-let id_victorias2 = document.getElementById('victorias2');
-id_victorias1.append(victorias1);
-id_victorias2.append(victorias2);*/
-
-
 function cambiar(boton){
     
     let cuadrado = document.getElementById(boton); 
