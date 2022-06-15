@@ -40,27 +40,48 @@ body{
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     z-index: 1;
 }
+#victorias1{
+    margin-left: 43%;  
+    color: #fff;
+    top: 2%;
+    position: absolute;
+    z-index: 1;
+    font-size: 80px;
+}
+#victorias2{
+    margin-left: 54%;  
+    color: #fff;
+    top: 2%;
+    position: absolute;
+    z-index: 1;
+    font-size: 80px;
+}
 
 .circulo-jugador {
-    margin-top: 10%;
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+    /*margin-top: 10%;
     width:60%;
     height:80%;
     border-radius:50%;
     border: solid 5px #31363a;
     overflow:hidden;
-    margin: auto;
+    margin: auto;*/
 }
 .cruz-jugador{
-    display: inline-block;
+    background-color: #31363a;
+    width: 100%;
+    height: 100%;
+    /*display: inline-block;
     width: 80%;
     height: 80%;
     background:
     linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#000000 45%,#000000 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
     linear-gradient(135deg, #ffffff 0%,#ffffff 43%,#000000 45%,#000000 55%,#ffffff 57%,#ffffff 100%);
     margin-left: 12%;
-    margin-top: 5%;
+    margin-top: 5%;*/
 }
-
 
 
 .juego{
